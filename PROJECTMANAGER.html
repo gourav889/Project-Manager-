@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Management Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Project Management Dashboard</h1>
+		</div>
+        <document.createElement()>// Get the task list element
+            const taskList = document.querySelector(".task-list ul");
+            
+            // Get the button element
+            const addButton = document.querySelector(".task-list button");
+            
+            // Add an event listener to the button
+            addButton.addEventListener("click", function() {
+              // Get the user input for the new task
+              let newTask = prompt("Enter a new task");
+            
+              // Check if the input is not empty
+              if (newTask) {
+                // Create a new list item element
+                let newItem = document.createElement("li");
+            
+                // Set the content of the new item to the input
+                newItem.textContent = newTask;
+            
+                // Append the new item to the task list
+                taskList.appendChild(newItem);
+              }
+            });
+            </document.createElement>
+		<div class="content">
+			<div class="task-list">
+				<h2>Task List</h2>
+				<ul>
+					<li>Task 1</li>
+					<li>Task 2</li>
+					<li>Task 3</li>
+					<li>Task 4</li>
+				</ul>
+			</div>
+			<div class="project-list">
+				<h2>Project List</h2>
+				<ul>
+					<li>Project 1</li>
+					<li>Project 2</li>
+					<li>Project 3</li>
+					<li>Project 4</li>
+				</ul>
+			</div>
+			<div class="team-list">
+				<h2>Team List</h2>
+				<ul>
+					<li>Team Member 1</li>
+					<li>Team Member 2</li>
+					<li>Team Member 3</li>
+					<li>Team Member 4</li>
+				</ul>
+                
+			</div>
+            
+		</div>
+	</div>
+</body>
+</html>
